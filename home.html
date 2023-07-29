@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <style>
+         /* Reset some default styles */
+ body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui;
+    background-color: #333;
+}
+
+/* Style the header and navbar */
+#header1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navbar {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 25px;
+}
+
+ul {
+    list-style-type: none;
+    word-spacing: 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    word-spacing: 5px;
+    gap: 10px;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style the middle section */
+#middle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#popup {
+    width: 95%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+#choose {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#gender {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: center; /* Center the gender images horizontally */
+}
+
+#male, #female {
+    width: 90%; /* Adjust the width of the gender images for better display on smaller screens */
+    height: auto;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+/* Style the footer */
+#footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#carouselExampleAutoplaying {
+    margin: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="header1">
+        <header>
+            <img width="200px" src="Screenshot_2023-07-30_00-00-42.png">
+        </header>
+       <div id="navbar">
+          <ul>
+                <li><h5 class="bi bi-house"><a href="#"> Home</a></h5></li>
+                <li><h5 class="bi bi-bag"><a href="#"> Shop</a></h5></li>
+                <li><h5 class="bi bi-cart"><a href="#"> Mycart</a></h5></li>
+                <li><h5 class="bi bi-person-circle"><a href="./login.html"> Login</a></h5></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="middle">
+       <div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://imagescdn.reebok.in/img/app/shopmedia/production/3/32--11989.jpg?w=1686.25&auto=format" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagescdn.reebok.in/img/app/shopmedia/production/3/32--12035.jpg?w=2381.25&auto=format" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagescdn.reebok.in/img/app/shopmedia/production/3/32--11326.jpg?w=2381.25&auto=format" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+         <!-- </div>
+            <img id="popup" src="https://imagescdn.reebok.in/img/app/shopmedia/production/3/32--11989.jpg?w=1686.25&auto=format"><br>
+        </div>-->
+
+    </div>
+
+    <div>
+        <div id="choose">
+            <h1>Who you shopping for?</h1>
+            <div id="gender">
+                <a href="mens2.html">
+                    <img id="male" src="https://imagescdn.reebok.in/img/app/shopmedia/production/3/32--12102.jpg?w=674.5&auto=format">
+                </a>
+                <a href="women2.html">
+                    <img id="female"  src="https://imagescdn.reebok.in/img/app/shopmedia/production/3/32--12103.jpg?w=674.5&auto=format">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p class="footer-copywright">© 2018 vaishak Fashion &amp; Retail Limited. All rights reserved.&nbsp;</p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>
